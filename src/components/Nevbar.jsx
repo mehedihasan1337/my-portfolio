@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Nevbar = () => {
     const navOptions = <>
-        <Link className='font-roboto' to="/">Home</Link>
+       <a className='mr-3 text-white hover:text-orange-500 ' href="#home">Home</a>
+       <a className='mr-3 text-white hover:text-orange-500 active' href="#about">About Me</a>
+       <a className='mr-3 text-white hover:text-orange-500 ' href="#skills">Skills</a>
+       <a className='mr-3 text-white hover:text-orange-500' href="#OtherSkills">Other Skills</a>
+       <a className='mr-3 text-white hover:text-orange-500' href="#projects">Projects</a>
+       <a className='mr-3 text-white hover:text-orange-500' href="#contact">Contact</a>
     </>
 
 
@@ -35,14 +40,15 @@ const Nevbar = () => {
                 </div>
                 <h2 className='font-roboto text-xl font-bold md:text-3xl hover:text-4xl text-white'> Mehedi <span className='text-orange-600'>H</span>.</h2>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {navOptions}
                 </ul>
             </div>
             <div className="navbar-end">
-                <h2 className='border border-orange-600 p-2 text-orange-600 font-semibold hover:bg-orange-500 hover:text-white flex items-center gap-1'
-                >Download Resume <FaArrowDown className='text-white hover:text-black ' /> </h2>
+                <a href="https://drive.google.com/file/d/1aVNoLpdLN68LeU7Jp3v1Z9zzWaH4ZgKN/view?usp=sharing">
+                <h2 className='border border-orange-600 p-2 text-orange-600 font-semibold hover:bg-orange-500 hover:text-white flex items-center text-xs md:text-xl  gap-1'
+                >Download Resume <FaArrowDown className='text-white hover:text-black ' /> </h2></a>
             </div>
         </div>
     );
