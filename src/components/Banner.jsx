@@ -6,8 +6,8 @@ import Icon from './Icon';
 const Banner = () => {
     const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "/public/Mehedi Hasan Fullstack Developer Resume..pdf";
-  link.download = "Mehedi Hasan Fullstack Developer Resume..pdf";
+ link.href = "/Mehedi-Hasan-Fullstack-Developer-Resume.pdf";
+  link.download = "Mehedi-Hasan-Fullstack-Developer-Resume.pdf";
   link.click();
 };
     return (
